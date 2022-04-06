@@ -94,6 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
+            
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
@@ -115,6 +116,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
+        
       </li>
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
@@ -258,6 +260,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="index.html?view=grafico-estatico" class="nav-link">
+              <i class="far fa-chart-bar nav-icon"></i>
+              <p>
+                grafico estatico
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -274,12 +284,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-sm-6">
             <h1 class="m-0">facturacion electronica</h1>
           </div><!-- /.col -->
+          
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="#">Starter Page</a></li>
               <li class="breadcrumb-item active">Ventas</li>
             </ol>
+            
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -306,6 +318,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <h5>Title</h5>
       <p>Sidebar content</p>
     </div>
+    
   </aside>
   <!-- /.control-sidebar -->
 
@@ -331,6 +344,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="dist/js/adminlte.min.js"></script>
 
 <script src="dist/js/loadweb.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+<script src="dist/colors-chart.js"></script>
+
 <script>
   $(document).ready(function(){
     let content = getParam('view');
