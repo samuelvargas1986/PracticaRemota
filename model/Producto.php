@@ -12,6 +12,16 @@ class Producto extends ModelMaster{
         }
     }
 
+    public function reportTypeProducts(){
+        try{
+            return parent::getRows("spu_resumen_tipoproductos");
+
+        }
+        catch(Exception $error){
+            die($error->getMessage());
+        }
+    }
+
 /**
  * registra un nuevo producto enviado en na array asociativa
  */

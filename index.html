@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
+  <title>HelPet</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -164,12 +164,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">HelPets</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-
+      <!-- opciones personalizadas-->
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -177,63 +177,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="index.html?view=ventas" class="nav-link">              
-              <i class="nav-icon fas fa-balance-scale"></i>
-              <p>
-                Ventas
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
             <a href="index.html?view=compras" class="nav-link">
-              <i class="nav-icon fas fa-shopping-cart"></i>
+                <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Compras
+              </p>
+            </a>
+          </li> 
 
-              </p>
-            </a>
-          </li>
           <li class="nav-item">
-            <a href="index.html?view=guiasRemision" class="nav-link">
-              <i class="nav-icon fas fa-truck-moving"></i>
+            <a href="index.html?view=donaciones" class="nav-link">
+                <i class="nav-icon fas fa-hand-holding-usd"></i>                
               <p>
-                Guías de remisión
+                donaciones
               </p>
             </a>
           </li>
+
           <li class="nav-item">
-            <a href="index.html?view=productos" class="nav-link">
-              <i class="nav-icon fas fa-dolly-flatbed""></i>
+            <a href="index.html?view=voluntarios" class="nav-link">
+              <i class="nav-icon fas fa-hand-paper"></i>              
               <p>
-                Productos
+                voluntarios
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="index.html?view=clientes" class="nav-link">
-              <i class="nav-icon far fa-address-card"></i>              
-              <p>
-               Clientes
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html?view=cajaChica" class="nav-link">
-              <i class="nav-icon fas fa-cash-register"></i>
-              <p>
-                Caja chica
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html?view=reportes" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Reportes
-              </p>
-            </a>
-          </li>
-          </li>
+
           <li class="nav-item">
             <a href="index.html?view=usuarios" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
@@ -243,23 +212,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
           </li>
+
+
           <li class="nav-item">
-            <a href="index.html?view=gastos" class="nav-link">
-                <i class="nav-icon far fa-money-bill-alt"></i>
-                <p>
-                Gastos
-              </p>
-            </a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a href="index.html?view=configuracion" class="nav-link">
-                <i class="nav-icon fas fa-cogs"></i>
+            <a href="index.html?view=mascota-rescate" class="nav-link">              
+              <i class="nav-icon fas fa-paw"></i>
               <p>
-                Configuracion
+                Mascota Rescatado
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="index.html?view=adopciones" class="nav-link">
+              <i class="nav-icon fas fa-hands-helping"></i>              
+              <p>
+                adopciones
+              </p>
+            </a>
+          </li>
+
+
           <li class="nav-item">
             <a href="index.html?view=grafico-estatico" class="nav-link">
               <i class="far fa-chart-bar nav-icon"></i>
@@ -268,6 +241,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+          
+
+
+          <!-- /opciones personalizadas-->
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -282,7 +259,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">facturacion electronica</h1>
+            <h1 class="m-0">HEL PETS UN MUNDO DE MASCOTAS </h1>
           </div><!-- /.col -->
           
           <div class="col-sm-6">
@@ -346,8 +323,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="dist/js/loadweb.js"></script>
 <!-- chartjs cdn-->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-
-<script src="dist/colors-chart.js"></script>
+<script src="dist/js/colors-chart.js"></script>
+<script src="dist/js/option-chart.js"></script>
 
 <script>
   $(document).ready(function(){
@@ -355,10 +332,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     console.log(content);
 
     if (content == false){
-      $("#contenido").load('views/welcome.html');
+      $("#contenido").load('views/welcome.php');
     }else{
       // la variable/Key "view"tiene un valor (nombre del archivo abrir)
-      $("#contenido").load('views/' + content + '.html');
+      $("#contenido").load('views/' + content + '.php');
 
     }
   
