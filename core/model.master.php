@@ -40,7 +40,7 @@ class ModelMaster extends Conexion{
     try{
       $commandSQL = $this->pdo->prepare("call $storeProcedure()");
       $commandSQL->execute();
-      return $commandSQL->fetchAll(PDO::FETCH_OBJ);
+      return $commandSQL->fetchAll(PDO::FETCH_ASSOC);
     }
     catch(Exception $e){
       die($e->getMessage());
